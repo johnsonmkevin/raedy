@@ -14,15 +14,16 @@ function Slideshow() {
         "https://images.unsplash.com/photo-1518614368389-5160c0b0de72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2lkcyUyMHBsYXlpbmclMjBiYXNrZXRiYWxsfGVufDB8fDB8fHww&w=1000&q=80",
     },
     {
-      title: "Skills",
+      title: "Dribbling",
       description: "Skill Training",
       image:
         "https://raedy.se/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-22-at-1.01.05-PM.jpeg",
     },
     {
-      title: "Skills",
-      description: "Skill Training",
-      image: "https://images.pexels.com/photos/3755451/pexels-photo-3755451.jpeg",
+      title: "Shooting",
+      description: "Shooting Training",
+      image:
+        "https://images.pexels.com/photos/3755451/pexels-photo-3755451.jpeg",
     },
   ];
   return (
@@ -48,7 +49,9 @@ function Slideshow() {
             <div
               key={index}
               className="slider-content"
-              style={{ background: `url('${item.image}') no-repeat center center` }}
+              style={{
+                background: `url('${item.image}') no-repeat center center`,
+              }}
             >
               <div className="inner">
                 <h1>{item.title}</h1>
